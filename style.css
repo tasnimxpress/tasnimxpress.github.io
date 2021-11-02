@@ -483,14 +483,14 @@ line-height: 1.7;
    height: auto !important;
    margin-bottom:5px; /* to match column gap */
 }
-/* Parent Container */
+/* Parent Container *
 .content_img{
     position: relative;
     float: left;
     margin-right: 10px;
 }
 
-/* Child Text Container */
+/* Child Text Container *
 .content_img div{
     position: absolute;
     bottom: 0;
@@ -508,7 +508,7 @@ line-height: 1.7;
      transition: visibility 0s, opacity 0.5s linear;
 }
 
-/* Hover on Parent Container */
+/* Hover on Parent Container *
 .content_img:hover{
     cursor: pointer;
 }
@@ -517,7 +517,7 @@ line-height: 1.7;
     padding: 8px 8px;
     visibility: visible;
     opacity: 0.7;
-}
+} */
 
 
 /* Contact CSS */
