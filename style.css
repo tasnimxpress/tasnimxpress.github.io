@@ -411,7 +411,7 @@ line-height: 1.7;
 }
 @keyframes python-fill{
     100%{
-        width: 90%;
+        width: 50%;
     }
 }
 #sql-bar{
@@ -422,28 +422,49 @@ line-height: 1.7;
         width: 90%;
     }
 }
-#pandas-bar{
+#sheets-bar{
     animation: pandas-fill 2s forwards;
 }
-@keyframes pandas-fill{
+@keyframes sheets-fill{
     100%{
-        width: 90%;
+        width: 80%;
     }
 }
-#numpy-bar{
-    animation: numpy-fill 2s forwards;
+#power-bar{
+    animation: power-fill 2s forwards;
 }
-@keyframes numpy-fill{
+@keyframes power-fill{
     100%{
-        width: 90%;
+        width: 80%;
     }
 }
+
+#analytics-bar{
+    animation: analytics-fill 2s forwards;
+}
+@keyframes analytics-fill{
+    100%{
+        width: 80%;
+    }
+}
+
+
+
 #html-bar{
     animation: html-fill 2s forwards;
 }
 @keyframes html-fill{
     100%{
         width: 90%;
+    }
+}
+
+#css-bar{
+    animation: css-fill 2s forwards;
+}
+@keyframes css-fill{
+    100%{
+        width: 80%;
     }
 }
 
