@@ -231,6 +231,7 @@ section .title{
   justify-content: center;
   margin-bottom: 40px;
 }
+
 section .title span{
   color: #0E2431;
   font-size: 25px;
@@ -361,101 +362,16 @@ line-height: 1.7;
   color: #99b8cd;
 }
 
-/* experiment skill
-.skill{
-  background: #c4d6e2;
-}
-.column {
-  float: left;
-  width: 50%;
-  padding: 30px;
-/*  height: 300px;  Should be removed. Only for demonstration */
-}
-
-/* Clear floats after the columns 
-.skill:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.skill-details{
-   width: 100%;
-   display: flex;
-   justify-content: space-between;
-   margin-bottom: 10px;
-}
-.bar{
-  margin-bottom: 30px;
-   position: relative;
-   border: 2px solid #99b8cd;
-   border-radius: 20px;
-
-}
-.bar div{
-   position: relative;
-   width: 0;
-   height: 9px;
-   border-radius: 10px;
-   background-color: #99b8cd;
-}
-#excel-bar{
-    animation: excel-fill 2s forwards;
-}
-@keyframes excel-fill{
-    100%{
-        width: 90%;
-    }
-}
-#python-bar{
-    animation: python-fill 2s forwards;
-}
-@keyframes python-fill{
-    100%{
-        width: 50%;
-    }
-}
-#sql-bar{
-    animation: sql-fill 2s forwards;
-}
-@keyframes sql-fill{
-    100%{
-        width: 90%;
-    }
-}
-#sheets-bar{
-    animation: pandas-fill 2s forwards;
-}
-@keyframes sheets-fill{
-    100%{
-        width: 80%;
-    }
-}
-
-#html-bar{
-    animation: html-fill 2s forwards;
-}
-@keyframes html-fill{
-    100%{
-        width: 90%;
-    }
-}
-
-#css-bar{
-    animation: css-fill 2s forwards;
-}
-@keyframes css-fill{
-    100%{
-        width: 80%;
-    }
-}
-
 
 /* new skill experiment */
 
-.container{
-  width: 50%;
+.myskills{
+
   margin: 0 auto;
+  justify-content: center;
+  text-align: center;
 }
+
 @keyframes load{
   from {
     width: 0%
@@ -473,15 +389,18 @@ line-height: 1.7;
 }
 @-o-keyframes load{
   from {
-    width: 0%
+    width: 50%
   }
 }
 
 .bar{
-  background-color: #EEE;
+  margin: auto;
+  width: 90%;
+  border: 3px;
+  background-color: #c4d6e2;
   padding: 2px;
-  border-radius: 15px;
-  margin-bottom: 5px;
+  border-radius: 50px;
+  margin-bottom: 10px;
   font-size: 14px;
   color: #FFF;
   font-weight: bold;
@@ -489,7 +408,6 @@ line-height: 1.7;
 }
 .bar::before{
   content:  attr(data-skill);
-  background-color: #f3b0ff;
   display: inline-block;
   padding: 5px 0 5px 10px;
   border-radius: inherit;
@@ -499,32 +417,55 @@ line-height: 1.7;
   -o-animation: load 2s 0s;
 }
 
-.bar.front::before{
-  background-color: #ffcc33;
+.bar.expert::before{
+  background-color: #009B77;
 }
-.bar.back::before{
-  background-color: #a6cfe3;
+
+.bar.advanced::before{
+  background-color: #34568B;
+}
+
+.bar.upper::before{
+  background-color:#1aa7ff;
+}
+
+.bar.intermediate::before{
+  background-color:#55B4B0;
+}
+
+.bar.basic::before{
+  background-color: #F5DF4D;
 }
 
 .bar.learning::before{
-  width: calc(20% - 10px);
+  background-color: #DD4124;
 }
-.bar.basic::before{
-  width: calc(40% - 10px);
-}
-.bar.intermediate::before{
-  width: calc(60% - 10px);
-}
-.bar.advanced::before{
-  width: calc(80% - 10px);
-}
+
+
+
 .bar.expert::before{
   width: calc(100% - 10px);
 }
 
+.bar.advanced::before{
+  width: calc(90% - 10px);
+}
 
+.bar.upper::before{
+  width: calc(80% - 10px);
+}
 
+.bar.intermediate::before{
+  width: calc(60% - 10px);
+}
 
+.bar.basic::before{
+  width: calc(30% - 10px);
+}
+
+.bar.learning::before{
+  width: calc(10% - 10px);
+}
 
 
 /* BLOG CSS */
