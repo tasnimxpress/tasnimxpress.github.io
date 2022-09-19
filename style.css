@@ -361,7 +361,7 @@ line-height: 1.7;
   color: #99b8cd;
 }
 
-/* experiment skill*/
+/* experiment skill
 .skill{
   background: #c4d6e2;
 }
@@ -372,7 +372,7 @@ line-height: 1.7;
 /*  height: 300px;  Should be removed. Only for demonstration */
 }
 
-/* Clear floats after the columns */
+/* Clear floats after the columns 
 .skill:after {
   content: "";
   display: table;
