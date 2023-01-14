@@ -6818,6 +6818,7 @@ input, select, textarea {
 /* Gallery (style2) */
 
 	.gallery.style2 {
+
 		background-color: #000000;
 		color: #ffffff;
 		display: -moz-flex;
@@ -6990,6 +6991,8 @@ input, select, textarea {
 
 		.gallery.style2 article {
 			-moz-flex-grow: 0;
+			margin: 3px;
+   			padding: 3px;
 			-webkit-flex-grow: 0;
 			-ms-flex-grow: 0;
 			flex-grow: 0;
@@ -7008,12 +7011,14 @@ input, select, textarea {
 				display: block;
 				width: 100%;
 				border-radius: 0;
+				
 			}
 
 				.gallery.style2 article .image img {
 					display: block;
 					width: 100%;
 					border-radius: 0;
+					
 				}
 
 			.gallery.style2 article .caption {
