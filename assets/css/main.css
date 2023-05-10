@@ -1651,6 +1651,252 @@ footer, header, hgroup, menu, nav, section {
 	}
 
 
+	@media screen and (max-width: 480px) {
+
+		.project-row {
+			display: flex;
+			flex-wrap: wrap;
+			box-sizing: border-box;
+			align-items: stretch;
+		}
+
+			.project-row > * {
+				box-sizing: border-box;
+			}
+
+			.project-row.gtr-uniform > * > :last-child {
+				margin-bottom: 0;
+			}
+
+			.project-row.aln-left {
+				justify-content: flex-start;
+			}
+
+			.project-row.aln-center {
+				justify-content: center;
+			}
+
+			.project-row.aln-right {
+				justify-content: flex-end;
+			}
+
+			.project-row.aln-top {
+				align-items: flex-start;
+			}
+
+			.project-row.aln-middle {
+				align-items: center;
+			}
+
+			.project-row.aln-bottom {
+				align-items: flex-end;
+			}
+
+			.project-row > .imp-mobile {
+				order: -1;
+			}
+
+			.project-row > .col-1-mobile {
+				width: 4.33333%;
+			}
+
+			.project-row > .off-1-mobile {
+				margin-left: 4.33333%;
+			}
+
+			.project-row > .col-2-mobile {
+				width: 12.66667%;
+			}
+
+			.project-row > .off-2-mobile {
+				margin-left: 12.66667%;
+			}
+
+			.project-row > .col-3-mobile {
+				width: 20%;
+			}
+
+			.project-row > .off-3-mobile {
+				margin-left: 20%;
+			}
+
+			.project-row > .col-4-mobile {
+				width: 30.33333%;
+			}
+
+			.project-row > .off-4-mobile {
+				margin-left: 30.33333%;
+			}
+
+			.project-row > .col-5-mobile {
+				width: 38.66667%;
+			}
+
+			.project-row > .off-5-mobile {
+				margin-left: 38.66667%;
+			}
+
+			.project-row > .col-6-mobile {
+				width: 50%;
+			}
+
+			.project-row > .off-6-mobile {
+				margin-left: 50%;
+			}
+
+			.project-row > .col-7-mobile {
+				width: 55.33333%;
+			}
+
+			.project-row > .off-7-mobile {
+				margin-left: 55.33333%;
+			}
+
+			.project-row > .col-8-mobile {
+				width: 60.66667%;
+			}
+
+			.project-row > .off-8-mobile {
+				margin-left: 60.66667%;
+			}
+
+			.project-row > .col-9-mobile {
+				width: 70%;
+			}
+
+			.project-row > .off-9-mobile {
+				margin-left: 70%;
+			}
+
+			.project-row > .col-10-mobile {
+				width: 80.33333%;
+			}
+
+			.project-row > .off-10-mobile {
+				margin-left: 80.33333%;
+			}
+
+			.project-row > .col-11-mobile {
+				width: 85.66667%;
+			}
+
+			.project-row > .off-11-mobile {
+				margin-left: 85.66667%;
+			}
+
+			.project-row > .col-12-mobile {
+				width: 100%;
+			}
+
+			.project-row > .off-12-mobile {
+				margin-left: 100%;
+			}
+
+			.project-row.gtr-0 {
+				margin-top: 0px;
+				margin-left: 0px;
+			}
+
+				.project-row.gtr-0 > * {
+					padding: 0px 0 0 0px;
+				}
+
+				.project-row.gtr-0.gtr-uniform {
+					margin-top: 0px;
+				}
+
+					.project-row.gtr-0.gtr-uniform > * {
+						padding-top: 0px;
+					}
+
+			.project-row.gtr-25 {
+				margin-top: -5px;
+				margin-left: -5px;
+			}
+
+				.project-row.gtr-25 > * {
+					padding: 5px 0 0 5px;
+				}
+
+				.project-row.gtr-25.gtr-uniform {
+					margin-top: -5px;
+				}
+
+					.project-row.gtr-25.gtr-uniform > * {
+						padding-top: 5px;
+					}
+
+			.project-row.gtr-50 {
+				margin-top: -10px;
+				margin-left: -10px;
+			}
+
+				.project-row.gtr-50 > * {
+					padding: 10px 0 0 10px;
+				}
+
+				.project-row.gtr-50.gtr-uniform {
+					margin-top: -10px;
+				}
+
+					.project-row.gtr-50.gtr-uniform > * {
+						padding-top: 10px;
+					}
+
+			.project-row {
+				margin-top: -20px;
+				margin-left: -20px;
+			}
+
+				.project-row > * {
+					padding: 20px 0 0 20px;
+				}
+
+				.project-row.gtr-uniform {
+					margin-top: -20px;
+				}
+
+					.project-row.gtr-uniform > * {
+						padding-top: 20px;
+					}
+
+			.project-row.gtr-150 {
+				margin-top: -30px;
+				margin-left: -30px;
+			}
+
+				.project-row.gtr-150 > * {
+					padding: 30px 0 0 30px;
+				}
+
+				.project-row.gtr-150.gtr-uniform {
+					margin-top: -30px;
+				}
+
+					.project-row.gtr-150.gtr-uniform > * {
+						padding-top: 30px;
+					}
+
+			.project-row.gtr-200 {
+				margin-top: -40px;
+				margin-left: -40px;
+			}
+
+				.project-row.gtr-200 > * {
+					padding: 40px 0 0 40px;
+				}
+
+				.project-row.gtr-200.gtr-uniform {
+					margin-top: -40px;
+				}
+
+					.project-row.gtr-200.gtr-uniform > * {
+						padding-top: 40px;
+					}
+
+	}
+
+
 
 /* Image */
 
