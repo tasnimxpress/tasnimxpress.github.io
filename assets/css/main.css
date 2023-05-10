@@ -173,6 +173,14 @@ footer, header, hgroup, menu, nav, section {
 				}
 		
 			}
+
+			@media screen and (max-width: 480px) {
+		
+				.achive-con {
+					width: 100%;
+				}
+			}
+
 		
 
 --------------------------------------------------------------------------------------------------
