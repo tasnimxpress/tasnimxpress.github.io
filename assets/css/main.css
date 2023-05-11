@@ -3788,6 +3788,13 @@ input, select, textarea {
 		max-width: 100%;
 		height: auto;
 	}
+
+	/* Small Mobile Styles */
+@media (max-width: 480px) {
+    .image {
+        max-width: 50%;
+    }
+}
 	
 
 /* List */
