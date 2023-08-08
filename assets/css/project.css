@@ -1,6 +1,173 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 
+/* Add this CSS to your existing project.css or create a new CSS file */
+
+/* Set base font size */
+body {
+  font-size: 16px;
+  }
+
+  /* Media queries for different screen sizes */
+  @media screen and (max-width: 600px) {
+    /* Adjust font sizes for smaller screens */
+    body {
+        font-size: 14px;
+    }
+
+    /* Center align navigation elements */
+    nav ul {
+        text-align: center;
+    }
+
+    /* Reduce font size for h2 elements */
+    h2 {
+      margin-bottom: 0;
+        font-size: 18px;
+    }
+
+    /* Adjust font size for paragraphs */
+    p {
+        margin-top: 10px;
+        height: 100%;
+        width: 100%; 
+        font-size: 14px;
+        line-height: 1.5; /* Add some line spacing for readability */
+    }
+
+    /* Adjust font size for .p1 elements */
+    .p1 {
+ 
+        font-size: 14px;
+        height: 100%;
+        margin: 0 auto; /* Center-align the div */
+    }
+    .c .p1{
+      margin-left: 0px;
+      margin-right: 0px;
+      width: 100%; 
+    }
+
+    /* Flex container styles */
+    .flexr {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap; /* Allow flex items to wrap */
+      margin-bottom: 40px;
+    }
+
+    .flexc {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    .container .gallery{
+      margin-top: 70px;
+    }
+    /* Adjustments for responsive navigation */
+    nav ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    /* Responsive hero image */
+    .hero {
+      margin-top: 50px;
+      background-size: cover;
+      background-position: center;
+      height: 300px; /* Adjust the height as needed */
+    }
+
+    /* Adjust layout for overlapping sections */
+    .Approach,
+    .hero-section {
+      height: 100%;
+      margin-top: 20px; /* Add margin to separate sections */
+    }
+
+    .hero-section {
+        padding: 20px; /* Add padding for better spacing */
+        text-align: center;
+    }
+
+    .gallery {
+        margin-top: 20px; /* Add margin to separate sections */
+    }
+
+    /* Responsive image adjustments */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Responsive gallery */
+    .gallery-item {
+      margin: 10px;
+    }
+
+    /* Responsive footer */
+    .footer-social-section {
+      text-align: center;
+    }
+
+    .footer-social-icons-wrapper {
+      margin-top: 10px;
+    }
+
+    /* Footer adjustments */
+    .footer-bottom-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Adjustments for smaller screens */
+    @media screen and (max-width: 600px) {
+      /* Center align footer content */
+      .footer-bottom-section {
+          flex-direction: column;
+          text-align: center;
+      }
+
+      /* Add spacing to footer links */
+      .footer-bottom-wrapper {
+          margin-top: 10px;
+      }
+
+
+      li{
+        font-size: 14px;
+      }
+
+    }
+    .c .appr{
+      margin-bottom: 40px;
+    }
+
+    .call{
+      height: 300px;
+  
+    }
+    .img-fluid{
+      width: 90%;
+      height: 90%;
+    }
+  }
+
+
+
+
+
+
+
   .container {
     margin: 0 auto;
     max-width: 100%;
@@ -23,6 +190,7 @@
     font-weight: 400;
     text-align: justify;
     font-size: 14pt;
+    padding-bottom: 30px;
 
   }
 
@@ -75,6 +243,7 @@ li{
     margin-top: 30px;
     margin-bottom: 30px;
 
+
 }
 
 
@@ -93,8 +262,8 @@ a{
 
 .sr-only{position: absolute !important;height: 1px; width: 1px;border: 0; padding: 0;overflow: hidden;clip: rect(1px, 1px, 1px, 1px);}
 *{margin:0;padding:0;}body{background:#f9f9f9;font-family:"Poppins", "sans-serif", sans-serif;color:#000;}.c{width:1120px;max-width:97%;margin:0 auto;}
-#trig,.trig-label{display:none;}.trig-label{position:fixed;top:0;right:0;padding:14px 7px;color:#f1f1f1;z-index:999;width:50px;padding-left:25px;}
-.trig-label:before {content: "";position: absolute;left: 5px;top: 16px;width: 15px;height: 2px;background: white;box-shadow: 0 6px 0 0 white, 0 12px 0 0 white;}
+#trig,.trig-label{display:none;}.trig-label{position:fixed;top:0;right:0;padding:14px 7px;color:#99b8cd;z-index:999;width:50px;padding-left:25px;}
+.trig-label:before {content: "";position: absolute;left: 5px;top: 16px;width: 15px;height: 2px;background: #99b8cd;box-shadow: 0 6px 0 0 #99b8cd, 0 12px 0 0 #99b8cd;}
 .ct{text-align:center;}i{font-style:normal;}.grey{color:#777;}.blue{color:#6ebbff;}.green{color:#333;}.orange{color:#c4d6e2;}.dark.grey{color:#333;}
 p{padding-bottom:10px;}.p1{padding:10px;}ul{margin:5px 5px 10px 30px;line-height:24px;}
 header{background:#99b8cd;}header svg{margin-top:5px;}nav{transition: all 0.6s;width:50%;}nav ul, nav ul li{list-style:none;margin:0;}nav ul li{display:flex;width:100%;}
