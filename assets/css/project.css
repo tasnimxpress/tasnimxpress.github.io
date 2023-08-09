@@ -161,10 +161,30 @@ body {
       width: 90%;
       height: 90%;
     }
+
+    .footer-social-section
+    .footer-social-overlap
+    .footer-bottom-section
+    .footer-bottom-wrapper .fa 
+    .footer-bottom-rights{
+      font-size: 12pt;
+
+    }
+
+    .footer-social-section
+    .footer-social-overlap{
+      font-size: 15pt;
+
+    }
+
+
+    .footer-social-overlap 
+    .footer-social-icons-wrapper{
+      width: 60%;
+      height: 60%;
+    }
+
   }
-
-
-
 
 
 
