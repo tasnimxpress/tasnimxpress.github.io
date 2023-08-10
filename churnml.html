@@ -61,7 +61,7 @@
 						<h2>Approach</h2>
 						<p>
 							<li><b>Data Collection:</b> Gathered customer data from the company's database. </li>
-							<li><b>Data Preprocessing:</b> Cleaned, handled missing values, and transformed data using Python, Excel, and SQL.</li>
+							<li><b>Data Preprocessing:</b> Cleaned, handled missing values, and transformed data using Python.</li>
 							<li><b>Feature Engineering:</b> Created new features like tenure groups to enhance model performance.</li>
 							<li><b>Model Selection:</b> Implemented various models (Decision Tree, Random Forest, KNN, etc.).</li>
 							<li><b>Balancing Data:</b> Used SMOTEEN technique to address class imbalance.</li>
@@ -73,9 +73,10 @@
 				</div>
 			</section>
 
+
 			
 			<section class="hero" data-src="https://dl.dropboxusercontent.com/u/4277345/codepen/hero.jpg">
-				<div class="c flexc"><h1 id="h">Understand Customer Behavior</h1>
+				<div class="c flexc"><h1 id="h">Understand Customer Behavior (EDA)</h1>
 					<p>Churn indicates how many customers cancel taking service within a certain time compared to active customers. This requires strong prediction tools.<br><br>
 						This project aimed to predict customer churn, where customers stop using a service. Through in-depth Exploratory Data Analysis (EDA), I comprehensively explored customer behavior and associated attributes. I used graphs and numbers to learn what things might make customers leave. This helped build a smart model that can tell us when a customer might leave. This is useful for businesses to prevent customers from leaving and offer better service.</p>
 				</div>
@@ -136,17 +137,96 @@
 				</div>
 			</div>
 			
-			<!-- call to action -->
-			<section class="call">
-				<div class="center">
-					<p>Feel free to explore the code on my 
-						<a href="https://github.com/tasnimxpress/Churn-prediction-model" class="repo" target="_blank"><b>GitHub</b> or</a> Jupyter Notebook
-						<a href="images/Churn/Customer Churn EDA.html" class="repo" target="_blank"><b></b>for <b> EDA</b></a>
-						<a href="images/Churn/Churn prediction ML Model.html" class="repo" target="_blank"><b></b> for <b>Machine Learning Model</b></a>
-						for an in-depth look at the project's implementation.
-					</P>
-				</div>							
+
+
+
+
+
+			<section class="Approach">
+				<div class="c flexr" tabindex="0">
+					<div class="appr">
+						<h1>Model Building Steps in Detail</h1>
+						<p>
+							<li><b>Data Exploration:</b> <br>
+								I started by exploring the dataset, which contained information about customer demographics, contract details, services subscribed, and churn status. I performed data cleaning, handled missing values, and visualized key features to gain insights.	</li>
+							<li><b>Model Selection:</b>	<br>
+								Since the dataset was imbalanced with a churn ratio of 26%, I knew that accuracy alone would not be sufficient to evaluate the models. Hence, I decided to focus on other metrics like recall, precision, and F1 score, especially for the minority class (churned customers).</li>
+
+							<li><b>Model Building:</b> <br>
+
+								I experimented with various classifiers, including Random Forest, Gradient Boosting, and K-Nearest Neighbors (KNN). These models showed promising results, but I needed to address the data imbalance issue to improve their performance.</li>
+							<li><b>Data Balancing:</b> <br>
+								To handle the data imbalance, I employed the SMOTEEN upsampling technique, creating a more balanced dataset with equal representation of churned and non-churned customers.</li>
+							<li><b>Model Evaluation:</b> <br>
+								After upsampling the data, I reevaluated the models' performance using the new balanced dataset. I compared the models' recall, precision, and F1 score for churned customers to identify the most effective one.</li>
+							<li><b>Recommendation:</b> <br>
+								Based on the evaluation results, I recommend using the best-performing model to predict customer churn. Additionally, I suggest implementing proactive customer retention strategies based on the model's predictions to reduce churn rates and improve customer satisfaction.</li>
+							<li><b> Conclusion:</b> <br>
+								This personal project has given me valuable insights into customer churn prediction and the importance of handling imbalanced datasets. By applying various machine learning techniques, I was able to build a reliable model to aid in customer retention efforts.</b> Gathered customer data from the company's database. </li>
+						</p>
+					</div>
+				</div>
 			</section>
+
+
+
+
+			<div class="container">
+		
+				<div class="gallery">
+					<div class="view overlay hm-black-light gallery-item">
+						<a href="images/Churn/Screenshot 2023-08-10 145806.png" target="_blank">
+							<img src="images/Churn/Screenshot 2023-08-10 145806.png" alt="Placeholder Image" class="img-fluid">
+						</a>
+					</div>
+
+					<div class="view overlay hm-black-light gallery-item">
+						<a href="images/Churn/Screenshot 2023-08-10 145727.png" target="_blank">
+							<img src="images/Churn/Screenshot 2023-08-10 145727.png" alt="Placeholder Image" class="img-fluid">
+						</a>
+					</div>
+
+					<div class="view overlay hm-black-light gallery-item">
+						<a href="images/Churn/Screenshot 2023-08-10 144834.png" target="_blank">
+							<img src="images/Churn/Screenshot 2023-08-10 144834.png" alt="Placeholder Image" class="img-fluid">
+						</a>
+					</div>
+
+					<div class="view overlay hm-black-light gallery-item">
+						<a href="images/Churn/Screenshot 2023-08-10 144854.png" target="_blank">
+							<img src="images/Churn/Screenshot 2023-08-10 144854.png" alt="Placeholder Image" class="img-fluid">
+						</a>
+					</div>
+
+					<div class="view overlay hm-black-light gallery-item">
+						<a href="images/Churn/Screenshot 2023-08-10 145319.png" target="_blank">
+							<img src="images/Churn/Screenshot 2023-08-10 145319.png" alt="Placeholder Image" class="img-fluid">
+						</a>
+					</div>
+
+
+					<div class="view overlay hm-black-light gallery-item">
+						<a href="images/Churn/Screenshot 2023-08-10 145349.png" target="_blank">
+							<img src="images/Churn/Screenshot 2023-08-10 145349.png" alt="Placeholder Image" class="img-fluid">
+						</a>
+					</div>
+
+				</div>
+			</div>
+
+
+						<!-- call to action -->
+						<section class="call">
+							<div class="center">
+								<p>Feel free to explore the code on my 
+									<a href="https://github.com/tasnimxpress/Churn-prediction-model" class="repo" target="_blank"><b>GitHub</b> or</a> Jupyter Notebook
+									<a href="images/Churn/Customer Churn EDA.html" class="repo" target="_blank"><b></b>for <b> EDA</b></a>
+									<a href="images/Churn/Churn prediction ML Model.html" class="repo" target="_blank"><b></b> for <b>Machine Learning Model</b></a>
+									for an in-depth look at the project's implementation. 
+								</P>
+								<p><b>Hearty Thank You</b></p>
+							</div>							
+						</section>
 		</article>
 	</main>
 
