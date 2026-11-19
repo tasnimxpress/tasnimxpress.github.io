@@ -135,23 +135,22 @@
     // equal weight per activity (1 unit each); the chart shows structure, not hours.
     const groups = {
       building: ['small tools', 'explainers'],
-      learning: ['AI & data engineering', 'non-fiction'],
-      exploring: ['treks', 'travel', 'new cuisines'],
+      learning: ['AI & data engineering', 'reading books'],
+      exploring: ['treks & travel', 'new cuisines'],
     };
     const sub = {
       'small tools': 'built for myself',
       explainers: 'on data & thinking',
       'AI & data engineering': 'new tools, old basics',
-      'non-fiction': 'one always in progress',
-      treks: 'hills and trails',
-      travel: 'new places',
+      'reading books': 'non-fiction, always one open',
+      'treks & travel': 'hills, trails and new places',
       'new cuisines': "whatever I haven't tried",
     };
     const cols = [Object.keys(groups), Object.values(groups).flat()];
     const links = [];
     for (const g in groups) groups[g].forEach(leaf => links.push({ s: g, t: leaf, v: 1 }));
 
-    const U = 24, BW = 8, W = 440, X = [108, 268], TOP = 6, GAP = [22, 9];
+    const U = 24, BW = 8, W = 440, X = [86, 240], TOP = 6, GAP = [22, 9];
     const nodes = {};
     cols.forEach((names, ci) => names.forEach(n => { nodes[n] = { n, ci, in: [], out: [] }; }));
     links.forEach(l => { nodes[l.s].out.push(l); nodes[l.t].in.push(l); });
