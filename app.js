@@ -291,11 +291,15 @@
   function fitRoadmap() {
     const host = $('#roadmap');
     if (!host) return;
-    const sec = host.parentElement;   // padding, not margin: margins would collapse into the next section's gap
-    sec.style.paddingBottom = '0px';
+    // if something follows the roadmap in its section (the off-the-clock panel), push that down;
+    // otherwise pad the section (padding, not margin: margins would collapse into the next section's gap)
+    const next = host.nextElementSibling, sec = host.parentElement;
+    if (next) next.style.marginTop = ''; else sec.style.paddingBottom = '0px';
     const bottom = host.getBoundingClientRect().bottom;
     const cards = [...host.querySelectorAll('.stop-card')].map(c => c.getBoundingClientRect().bottom);
-    sec.style.paddingBottom = Math.max(0, Math.ceil(Math.max(...cards) - bottom)) + 'px';
+    const hang = Math.max(0, Math.ceil(Math.max(...cards) - bottom));
+    if (next) next.style.marginTop = (hang + parseFloat(getComputedStyle(next).marginTop)) + 'px';
+    else sec.style.paddingBottom = hang + 'px';
   }
 
   /* ---------- 3. experience gantt ---------- */

@@ -21,7 +21,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261120y">
+<link rel="stylesheet" href="style.css?v=20261121b">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":"Tasnima Aktar","alternateName":"Tasnim","jobTitle":"Analytics Engineer","url":"https://tasnimxpress.github.io/","sameAs":["https://www.linkedin.com/in/tasnimxpress/","https://github.com/tasnimxpress"]}
 </script>
@@ -61,14 +61,6 @@
       </span>
     </div>
   </div>
-
-  <aside class="me" aria-label="Off the clock">
-    <p class="me-head mono">Off the clock · my other pipeline</p>
-    <figure class="panel life">
-      <svg id="life" role="img" aria-label="Sankey diagram of what I do off the clock. Building: small tools built for myself and explainers on data and thinking. Learning: AI and data engineering, and non-fiction books. Exploring: treks, travel and new cuisines."></svg>
-      <figcaption class="mono">what I do off the clock · hover to trace</figcaption>
-    </figure>
-  </aside>
 </section>
 
 <section class="wrap pipe-wrap" aria-label="How I work">
@@ -219,16 +211,28 @@
 <section class="section wrap" id="work">
   <div class="sec-head">
     <h2>Selected work</h2>
-    <p class="sec-sub">Employer work is confidential, so most of these are personal projects. I redrew each chart from its notebook's real output.</p>
+    <p class="sec-sub">Employer work is confidential, so these are personal projects. Each one covers the problem, what I did and what I found, with charts redrawn from the real output.</p>
   </div>
 
   <div class="work-grid">
+    <!-- DATA ENGINEERING CASE STUDY GOES HERE (first, full width). Copy this shape:
+    <article class="panel case wide">
+      <p class="mono tag">Python · dbt · PostgreSQL · GitHub Actions</p>
+      <h3>Project name</h3>
+      <dl class="pao">
+        <div><dt>Problem</dt><dd>...</dd></div>
+        <div><dt>Approach</dt><dd>...</dd></div>
+        <div><dt>Outcome</dt><dd>... (measured results only)</dd></div>
+      </dl>
+      architecture diagram here
+      <a class="more" href="REPO" target="_blank" rel="noopener">Repository ↗</a>
+    </article>
+    When it is added, update the ".work-grid .case.third:nth-child(2)" rule in style.css (it targets the SQL card). -->
     <article class="panel case wide">
       <div class="case-head">
         <div>
           <p class="mono tag">Python · pandas</p>
           <h3>Product sales, 12 months</h3>
-          <p class="case-sub">186,305 cleaned orders across 10 US cities. Where does revenue come from, and when?</p>
         </div>
         <div class="seg" role="tablist" aria-label="Chart view">
           <button role="tab" aria-selected="true" data-view="month">By month</button>
@@ -236,6 +240,11 @@
           <button role="tab" aria-selected="false" data-view="pairs">Bought together</button>
         </div>
       </div>
+      <dl class="pao">
+        <div><dt>Problem</dt><dd>A year of raw electronics orders from 10 US cities. When and where does revenue come from, when should ads run, and what sells together?</dd></div>
+        <div><dt>Approach</dt><dd>Cleaned the order data in pandas (blank and malformed rows, types) down to 186,305 orders, derived month, city and hour columns, then grouped orders and paired products bought in the same order.</dd></div>
+        <div><dt>Outcome</dt><dd>December is the best month at $4.61M and San Francisco the biggest city. Orders peak around 12 PM and 7 PM, so ads should run just before. A phone plus its charging cable is the strongest bundle.</dd></div>
+      </dl>
       <div id="salesChart" class="chart" aria-live="polite"></div>
       <p id="salesNote" class="chart-note"></p>
       <a class="more" href="Uploads/Product-Analysis.html" target="_blank" rel="noopener">Open the notebook ↗</a>
@@ -244,7 +253,11 @@
     <article class="panel case third">
       <p class="mono tag">SQL · MySQL</p>
       <h3>COVID-19 deaths &amp; vaccinations</h3>
-      <p class="case-sub">Fatality and infection rates by country from Our World in Data, using CTEs, joins and views.</p>
+      <dl class="pao">
+        <div><dt>Problem</dt><dd>How hard did COVID-19 hit each country relative to its cases and population, and how fast did vaccination roll out?</dd></div>
+        <div><dt>Approach</dt><dd>Loaded Our World in Data CSVs into MySQL, joined the deaths and vaccination tables, and used CTEs, window functions and views.</dd></div>
+        <div><dt>Outcome</dt><dd>Fatality and infection rates per country, a rolling vaccination count for Bangladesh, and the top 20 countries by confirmed cases.</dd></div>
+      </dl>
 <pre class="code"><code><span class="k">WITH</span> cte <span class="k">AS</span> (
   <span class="k">SELECT</span> location,
     <span class="f">MAX</span>(<span class="f">CAST</span>(total_deaths <span class="k">AS</span> UNSIGNED)) <span class="k">AS</span> deaths,
@@ -263,7 +276,11 @@
       <a class="shot-img" href="https://github.com/tasnimxpress/sales-customeranalysis" target="_blank" rel="noopener"><img src="img/proj-sales-customer.webp" alt="Power BI sales page with KPI cards, sales trend lines and category breakdown" width="1200" height="671" loading="lazy"></a>
       <p class="mono tag">Power BI · DAX · data model</p>
       <h3>Sales &amp; customer analysis</h3>
-      <p class="case-sub">A two-page report (sales and customers) on a modelled star schema, with month-over-month DAX measures and slicers for year and category.</p>
+      <dl class="pao">
+        <div><dt>Problem</dt><dd>Sales and customer data that was hard to read together across segments, countries, categories and time.</dd></div>
+        <div><dt>Approach</dt><dd>Cleaned in Power Query, modelled as a star schema, and wrote DAX for month-over-month change, margin and a rank-based customer segmentation. Two pages with year and category slicers.</dd></div>
+        <div><dt>Outcome</dt><dd>Loyal customers bring in 44.5% of sales. The USA and Germany are the top markets, Drinks and Cheese the top categories, and 2021 peaked before a slight dip in 2022.</dd></div>
+      </dl>
       <a class="more" href="https://github.com/tasnimxpress/sales-customeranalysis" target="_blank" rel="noopener">Repository ↗</a>
     </article>
 
@@ -271,7 +288,11 @@
       <a class="shot-img" href="https://github.com/tasnimxpress/SalesDashboard" target="_blank" rel="noopener"><img src="img/proj-sales-dashboard.webp" alt="Dark Power BI dashboard showing revenue, cost, profit and margin by quarter and category" width="1166" height="742" loading="lazy"></a>
       <p class="mono tag">Power BI</p>
       <h3>Three-year sales dashboard</h3>
-      <p class="case-sub">$25.66M of revenue by quarter, category and year. Margin stays between 31.7% and 33.3% every quarter, and Kids &amp; Toys is the largest category at 43%.</p>
+      <dl class="pao">
+        <div><dt>Problem</dt><dd>Three years of sales in separate sheets, with no single view of revenue, cost, margin or salesperson performance.</dd></div>
+        <div><dt>Approach</dt><dd>Appended the yearly sheets in Power Query, built the data model, and wrote DAX for cumulative sales, margin and profit against target.</dd></div>
+        <div><dt>Outcome</dt><dd>$25.66M revenue at a 32.5% margin, between 31.7% and 33.3% every quarter. Kids &amp; Toys leads on profit at 43%, and the top seller by revenue was the only top seller to hit the profit target.</dd></div>
+      </dl>
       <a class="more" href="https://github.com/tasnimxpress/SalesDashboard" target="_blank" rel="noopener">Repository ↗</a>
     </article>
   </div>
@@ -285,19 +306,37 @@
     <p class="sec-sub">The credentials that shaped how I work, from degree to today. Most of them earned alongside the job.</p>
   </div>
   <div class="roadmap" id="roadmap"></div>
+
+  <figure class="panel off" aria-labelledby="off-h">
+    <div class="panel-head">
+      <span class="mono">off_the_clock</span>
+      <span class="mono dim">hover to trace</span>
+    </div>
+    <div class="off-body">
+      <div class="off-copy">
+        <p class="mono label">Still learning</p>
+        <h3 id="off-h">The rest happens after hours</h3>
+        <p>Certificates are the formal part. Outside work I build small tools for myself, write explainers on data and thinking, and keep learning AI and data engineering on my own. The rest is treks, travel and food I haven't tried yet.</p>
+      </div>
+      <svg id="life" role="img" aria-label="Sankey diagram of what I do off the clock. Building: small tools built for myself and explainers on data and thinking. Learning: AI and data engineering, and non-fiction books. Exploring: treks, travel and new cuisines."></svg>
+    </div>
+  </figure>
 </section>
 
 <!-- CONTACT -->
 <section class="section wrap contact" id="contact">
   <div class="panel contact-panel">
     <div>
+      <p class="mono label">Open to remote opportunities</p>
       <h2>Need reporting that runs itself?</h2>
-      <p class="sec-sub">I'm open to analytics engineering and data roles, and to freelance pipeline, modelling or dashboard work.</p>
+      <p class="sec-sub">I'm available for remote data engineer and analytics engineer roles, and I take on freelance projects in data pipelines, data modelling and dashboards.</p>
+      <p class="contact-ask">Have a role or a data problem? Let's talk. Email is the quickest way to reach me.</p>
     </div>
     <div class="contact-actions">
       <a class="btn primary" href="mailto:tasnimwp@gmail.com">tasnimwp@gmail.com</a>
       <a class="btn" href="https://www.linkedin.com/in/tasnimxpress/" target="_blank" rel="noopener">LinkedIn</a>
       <a class="btn" href="Tasnima_Aktar_CV.pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
+      <a class="btn" href="https://github.com/tasnimxpress" target="_blank" rel="noopener">GitHub</a>
     </div>
   </div>
 </section>
@@ -310,6 +349,6 @@
 </footer>
 
 <div id="tip" class="tip" role="status" hidden></div>
-<script src="app.js?v=20261120x" defer></script>
+<script src="app.js?v=20261121b" defer></script>
 </body>
 </html>
