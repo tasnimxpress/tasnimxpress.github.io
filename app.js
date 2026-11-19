@@ -37,7 +37,7 @@
     { k: 'question', name: 'Question', tools: 'what to decide', c: 'var(--c4)',
       lead: 'Every piece of work starts with what the business needs to decide. That sets which data I need, at what grain, and which metric answers it.',
       items: [
-        ['Growth & revenue', 'performance against target, GTV, revenue trends'],
+        ['Growth & revenue', 'target vs achievement, KPIs, GTV, revenue trends'],
         ['Retention & churn', 'cohorts, inactive segments, repeat behaviour'],
         ['Conversion & funnel', 'onboarding and KYC drop-off, lost value'],
         ['Pricing & performance', 'fares, markup, route and booking trends'],
