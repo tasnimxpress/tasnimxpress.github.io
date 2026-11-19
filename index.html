@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Tasnim · Analytics Engineer</title>
+<meta name="description" content="Tasnim (Tasnima Aktar), analytics engineer in Dhaka. Data pipelines and API integrations, warehouse modelling, workflow automation and BI with SQL, Python, BigQuery, PostgreSQL, Metabase and Power BI.">
+<meta name="author" content="Tasnima Aktar">
+<meta name="theme-color" content="#0a0c10">
+<link rel="canonical" href="https://tasnimxpress.github.io/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Tasnim · Analytics Engineer">
+<meta property="og:description" content="Less manual reporting, more decisions. Reliable data, automatic reports and insights that are easy to act on.">
+<meta property="og:url" content="https://tasnimxpress.github.io/">
+<meta property="og:image" content="https://tasnimxpress.github.io/img/apple-touch-icon.png">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=20261120y">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Tasnima Aktar","alternateName":"Tasnim","jobTitle":"Analytics Engineer","url":"https://tasnimxpress.github.io/","sameAs":["https://www.linkedin.com/in/tasnimxpress/","https://github.com/tasnimxpress"]}
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="logo" href="#top" aria-label="Tasnim, home">
+      <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true"><rect x="11" y="15" width="34" height="9" rx="2.5" fill="#5b9dff"/><rect x="23.5" y="28" width="9" height="22" rx="2.5" fill="#e8ecf3"/><circle cx="44" cy="45.5" r="4.5" fill="#5b9dff"/></svg>
+      <span class="logo-txt">Tasnim</span>
+    </a>
+    <nav aria-label="Sections">
+      <a href="#capabilities">Capabilities</a>
+      <a href="#experience">Experience</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn sm" href="Tasnima_Aktar_CV.pdf" target="_blank" rel="noopener">Résumé</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero wrap">
+  <div class="hero-copy">
+    <p class="mono label">Analytics Engineer · Data Analyst</p>
+    <h1>Less manual reporting, more <span class="swash">decisions<svg viewBox="0 0 200 24" preserveAspectRatio="none" aria-hidden="true"><path d="M3 17 C 45 7, 120 3, 197 7 C 199 8, 198 10, 196 10 C 130 9, 60 12, 8 21 C 4 22, 1 19, 3 17 Z"/></svg></span>.</h1>
+    <p class="lede">I'm Tasnim, an analytics engineer and data analyst with four years across fintech, travel, B2B and civic data. I turn messy sources into trusted numbers and automate the reporting, so teams spend their time deciding, not compiling. Currently at <b>Gozayaan</b>.</p>
+    <div class="hero-cta">
+      <a class="btn primary" href="#work">See the work</a>
+      <a class="btn" href="mailto:tasnimwp@gmail.com">Get in touch</a>
+      <span class="hero-links">
+        <a href="https://github.com/tasnimxpress" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/tasnimxpress/" target="_blank" rel="noopener">LinkedIn</a>
+      </span>
+    </div>
+  </div>
+
+  <aside class="me" aria-label="Off the clock">
+    <p class="me-head mono">Off the clock · my other pipeline</p>
+    <figure class="panel life">
+      <svg id="life" role="img" aria-label="Sankey diagram of what I do off the clock. Building: small tools built for myself and explainers on data and thinking. Learning: AI and data engineering, and non-fiction books. Exploring: treks, travel and new cuisines."></svg>
+      <figcaption class="mono">what I do off the clock · hover to trace</figcaption>
+    </figure>
+  </aside>
+</section>
+
+<section class="wrap pipe-wrap" aria-label="How I work">
+  <figure class="pipeline panel" aria-labelledby="pipe-cap">
+    <div class="panel-head">
+      <span class="mono">how_i_work</span>
+      <span class="mono dim">select a stage</span>
+    </div>
+    <div id="stages" class="stages" role="tablist" aria-label="How I work, stage by stage"></div>
+    <div id="stageDetail" class="stage-detail" role="tabpanel" aria-live="polite"></div>
+    <div class="pipe-foot mono">
+      <span><b>Runs</b> near real-time · batch · daily, on GitHub Actions cron, n8n and scheduled queries</span>
+      <span><b>Checked for</b> duplicates · nulls · data types · row counts · reconciliation · failed-job email alerts</span>
+    </div>
+    <figcaption id="pipe-cap" class="sr-only">How I work: from a business question through ingestion, modelling, metrics and delivery to a decision. The loading method and schedule depend on the task.</figcaption>
+  </figure>
+</section>
+
+<!-- CAPABILITIES -->
+<section class="section wrap" id="capabilities" aria-labelledby="caps-h">
+  <div class="sec-head">
+    <h2 id="caps-h">What I do</h2>
+  </div>
+  <div class="caps">
+    <article class="cap">
+      <span class="cap-bar" style="--c: var(--c1)"></span>
+      <h3>Pipelines &amp; integrations</h3>
+      <p>I pull data from Google Cloud APIs, custom REST APIs, app databases, CSV files, sheets and forms, then land it cleanly in PostgreSQL or BigQuery.</p>
+      <p class="cap-tools">Python · FastAPI · REST APIs · Google Cloud</p>
+    </article>
+    <article class="cap">
+      <span class="cap-bar" style="--c: var(--c2)"></span>
+      <h3>Warehouse modelling</h3>
+      <p>I write star-schema marts, production SQL and data-quality rules, so every team counts customers, transactions and revenue the same way.</p>
+      <p class="cap-tools">SQL · BigQuery · PostgreSQL · Snowflake</p>
+    </article>
+    <article class="cap">
+      <span class="cap-bar" style="--c: var(--c3)"></span>
+      <h3>Automation</h3>
+      <p>Any report or data handoff that repeats becomes a scheduled job. Python does the work and cron or n8n runs it, so nobody has to remember.</p>
+      <p class="cap-tools">GitHub Actions · n8n · Apps Script</p>
+    </article>
+    <article class="cap">
+      <span class="cap-bar" style="--c: var(--c4)"></span>
+      <h3>Analytics &amp; BI</h3>
+      <p>Cohorts, retention, CAC and LTV, funnels, pricing and revenue, delivered as dashboards people use on their own.</p>
+      <p class="cap-tools">Metabase · Power BI · Looker · Mixpanel</p>
+    </article>
+  </div>
+</section>
+
+<!-- AUTOMATION -->
+<section class="section wrap" id="automation">
+  <div class="sec-head">
+    <h2>Recurring work, automated</h2>
+    <p class="sec-sub">If a report or data handoff happens on a schedule, it should run itself. I write the job in Python, schedule it on GitHub Actions or n8n, and deliver the output wherever people already look. I've used this pattern to retire hand-built daily reports and recurring data extracts.</p>
+  </div>
+  <div class="panel auto-panel">
+    <svg id="flow" class="flow" role="img" aria-label="Flow: a cron or n8n trigger starts the job, which extracts from SQL and APIs, transforms in Python, and delivers dashboards and reports."></svg>
+    <p class="mono dim small auto-tools">Python · GitHub Actions · n8n · SQL · REST APIs</p>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="section wrap" id="results">
+  <div class="sec-head">
+    <h2>Results</h2>
+    <p class="sec-sub">A few outcomes from the work above.</p>
+  </div>
+  <div class="results">
+    <article class="panel res">
+      <p class="res-kind mono">Reporting speed</p>
+      <p class="res-num">5 <em>→</em> 1 <small>day</small></p>
+      <div class="ba" role="img" aria-label="Month-end reporting: 5 days before, 1 day after">
+        <div class="ba-row"><span>before</span><i style="--v:100%"></i><b>5d</b></div>
+        <div class="ba-row hi"><span>after</span><i style="--v:20%"></i><b>1d</b></div>
+      </div>
+      <p class="res-txt">Month-end reporting turnaround after I redesigned the process.</p>
+      <p class="res-org mono">Gozayaan</p>
+    </article>
+    <article class="panel res">
+      <p class="res-kind mono">Public impact</p>
+      <p class="res-num">~5,700 <small>affidavits</small></p>
+      <div class="cols" role="img" aria-label="Candidates per national election: 1,567 in 2008, 390 in 2014, 1,861 in 2018, 1,896 in 2024">
+        <span style="--px:37px"><i></i><b>1,567</b><em>2008</em></span>
+        <span style="--px:9px"><i></i><b>390</b><em>2014</em></span>
+        <span style="--px:43px"><i></i><b>1,861</b><em>2018</em></span>
+        <span class="hi" style="--px:44px"><i></i><b>1,896</b><em>2024</em></span>
+      </div>
+      <p class="res-txt">Candidate affidavits from four national elections, scraped, digitised and published in Transparency International Bangladesh's public "Know Your Candidate" dashboard for voters.</p>
+      <p class="res-org mono">Transparency International Bangladesh</p>
+    </article>
+    <article class="panel res">
+      <p class="res-kind mono">Breadth</p>
+      <p class="res-num">15+ <small>dashboards</small></p>
+      <div class="units small" role="img" aria-label="Fifteen dashboards and more">
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="plus"></i>
+      </div>
+      <p class="res-txt">Dashboards and reports across 6 business functions, built on a warehouse I designed from the ground up.</p>
+      <p class="res-org mono">Riseup Labs</p>
+    </article>
+    <article class="panel res">
+      <p class="res-kind mono">Time saved</p>
+      <p class="res-num">8–10 <small>hrs / week</small></p>
+      <div class="track-wrap" role="img" aria-label="8 to 10 hours of a 40-hour work week">
+        <div class="track"><i class="range" style="--v:20%; --ext:5%"></i></div>
+        <p class="mono track-cap"><span>0</span><span>of a 40-hour week</span><span>40h</span></p>
+      </div>
+      <p class="res-txt">Manual data collection replaced with automated pipelines and n8n workflows into PostgreSQL.</p>
+      <p class="res-org mono">Riseup Labs</p>
+    </article>
+    <article class="panel res">
+      <p class="res-kind mono">Decision speed</p>
+      <p class="res-num">30% <small>faster</small></p>
+      <div class="ba" role="img" aria-label="Decision cycle time: 100 before, 70 after">
+        <div class="ba-row"><span>before</span><i style="--v:100%"></i><b>100</b></div>
+        <div class="ba-row hi"><span>after</span><i style="--v:70%"></i><b>70</b></div>
+      </div>
+      <p class="res-txt">Shorter decision cycles once teams had live dashboards instead of waiting on manual reports.</p>
+      <p class="res-org mono">Riseup Labs</p>
+    </article>
+    <article class="panel res">
+      <p class="res-kind mono">Marketing funnel</p>
+      <p class="res-num"><em>+</em>5–8<small>% conversion</small></p>
+      <div class="ba" role="img" aria-label="Conversion: 100 before, 105 to 108 after">
+        <div class="ba-row"><span>before</span><i style="--v:90.9%"></i><b>100</b></div>
+        <div class="ba-row hi"><span>after</span><i class="range" style="--v:95.5%; --ext:2.7%"></i><b>105–108</b></div>
+      </div>
+      <p class="res-txt">Funnel and channel analysis that found where prospects dropped off, and flagged a paid campaign that wasn't paying back, which was then stopped.</p>
+      <p class="res-org mono">Riseup Labs</p>
+    </article>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section wrap" id="experience">
+  <div class="sec-head">
+    <h2>Four years, five teams</h2>
+    <p class="sec-sub">Pick a bar to read what I did there.</p>
+  </div>
+  <div class="panel">
+    <div id="gantt" class="gantt"></div>
+    <div id="role" class="role" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section class="section wrap" id="work">
+  <div class="sec-head">
+    <h2>Selected work</h2>
+    <p class="sec-sub">Employer work is confidential, so most of these are personal projects. I redrew each chart from its notebook's real output.</p>
+  </div>
+
+  <div class="work-grid">
+    <article class="panel case wide">
+      <div class="case-head">
+        <div>
+          <p class="mono tag">Python · pandas</p>
+          <h3>Product sales, 12 months</h3>
+          <p class="case-sub">186,305 cleaned orders across 10 US cities. Where does revenue come from, and when?</p>
+        </div>
+        <div class="seg" role="tablist" aria-label="Chart view">
+          <button role="tab" aria-selected="true" data-view="month">By month</button>
+          <button role="tab" aria-selected="false" data-view="city">By city</button>
+          <button role="tab" aria-selected="false" data-view="pairs">Bought together</button>
+        </div>
+      </div>
+      <div id="salesChart" class="chart" aria-live="polite"></div>
+      <p id="salesNote" class="chart-note"></p>
+      <a class="more" href="Uploads/Product-Analysis.html" target="_blank" rel="noopener">Open the notebook ↗</a>
+    </article>
+
+    <article class="panel case third">
+      <p class="mono tag">SQL · MySQL</p>
+      <h3>COVID-19 deaths &amp; vaccinations</h3>
+      <p class="case-sub">Fatality and infection rates by country from Our World in Data, using CTEs, joins and views.</p>
+<pre class="code"><code><span class="k">WITH</span> cte <span class="k">AS</span> (
+  <span class="k">SELECT</span> location,
+    <span class="f">MAX</span>(<span class="f">CAST</span>(total_deaths <span class="k">AS</span> UNSIGNED)) <span class="k">AS</span> deaths,
+    <span class="f">MAX</span>(<span class="f">CAST</span>(total_cases  <span class="k">AS</span> UNSIGNED)) <span class="k">AS</span> cases
+  <span class="k">FROM</span> coviddeath
+  <span class="k">WHERE</span> continent <span class="k">IS NOT NULL</span>
+    <span class="k">AND</span> location = <span class="s">'bangladesh'</span>
+  <span class="k">GROUP BY</span> location)
+<span class="k">SELECT</span> location,
+  <span class="f">ROUND</span>(deaths / cases * <span class="n">100</span>, <span class="n">2</span>) <span class="k">AS</span> fatality_rate
+<span class="k">FROM</span> cte;</code></pre>
+      <a class="more" href="https://github.com/tasnimxpress/sql-data-exploration" target="_blank" rel="noopener">Repository ↗</a>
+    </article>
+
+    <article class="panel case third shot">
+      <a class="shot-img" href="https://github.com/tasnimxpress/sales-customeranalysis" target="_blank" rel="noopener"><img src="img/proj-sales-customer.webp" alt="Power BI sales page with KPI cards, sales trend lines and category breakdown" width="1200" height="671" loading="lazy"></a>
+      <p class="mono tag">Power BI · DAX · data model</p>
+      <h3>Sales &amp; customer analysis</h3>
+      <p class="case-sub">A two-page report (sales and customers) on a modelled star schema, with month-over-month DAX measures and slicers for year and category.</p>
+      <a class="more" href="https://github.com/tasnimxpress/sales-customeranalysis" target="_blank" rel="noopener">Repository ↗</a>
+    </article>
+
+    <article class="panel case third shot">
+      <a class="shot-img" href="https://github.com/tasnimxpress/SalesDashboard" target="_blank" rel="noopener"><img src="img/proj-sales-dashboard.webp" alt="Dark Power BI dashboard showing revenue, cost, profit and margin by quarter and category" width="1166" height="742" loading="lazy"></a>
+      <p class="mono tag">Power BI</p>
+      <h3>Three-year sales dashboard</h3>
+      <p class="case-sub">$25.66M of revenue by quarter, category and year. Margin stays between 31.7% and 33.3% every quarter, and Kids &amp; Toys is the largest category at 43%.</p>
+      <a class="more" href="https://github.com/tasnimxpress/SalesDashboard" target="_blank" rel="noopener">Repository ↗</a>
+    </article>
+  </div>
+  <p class="aside">More, including data engineering exercises and small tools, on <a href="https://github.com/tasnimxpress?tab=repositories" target="_blank" rel="noopener">GitHub ↗</a></p>
+</section>
+
+<!-- CREDENTIALS -->
+<section class="section wrap" id="credentials">
+  <div class="sec-head">
+    <h2>Education &amp; certificates</h2>
+    <p class="sec-sub">The credentials that shaped how I work, from degree to today. Most of them earned alongside the job.</p>
+  </div>
+  <div class="roadmap" id="roadmap"></div>
+</section>
+
+<!-- CONTACT -->
+<section class="section wrap contact" id="contact">
+  <div class="panel contact-panel">
+    <div>
+      <h2>Need reporting that runs itself?</h2>
+      <p class="sec-sub">I'm open to analytics engineering and data roles, and to freelance pipeline, modelling or dashboard work.</p>
+    </div>
+    <div class="contact-actions">
+      <a class="btn primary" href="mailto:tasnimwp@gmail.com">tasnimwp@gmail.com</a>
+      <a class="btn" href="https://www.linkedin.com/in/tasnimxpress/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="Tasnima_Aktar_CV.pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="wrap foot mono dim">
+  <span>© <span id="yr">2026</span> Tasnim</span>
+  <span>Portfolio powered by coffee ☕</span>
+</footer>
+
+<div id="tip" class="tip" role="status" hidden></div>
+<script src="app.js?v=20261120x" defer></script>
+</body>
+</html>

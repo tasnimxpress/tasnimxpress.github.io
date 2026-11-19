@@ -1,0 +1,19 @@
+# Whitelist: ignore everything, then allow only what the live site needs.
+# Anything else dropped in this folder (drafts, the full CV with phone number, notes) is never pushed.
+*
+!.gitignore
+!.nojekyll
+!README.md
+!index.html
+!style.css
+!app.js
+!favicon.ico
+!Tasnima_Aktar_CV.pdf
+!img/
+!img/apple-touch-icon.png
+!img/favicon-32.png
+!img/favicon.svg
+!img/proj-sales-customer.webp
+!img/proj-sales-dashboard.webp
+!Uploads/
+!Uploads/Product-Analysis.html
